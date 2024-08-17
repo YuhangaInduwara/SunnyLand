@@ -1,6 +1,6 @@
 # SunnyLand 🌳🦊
 
-Welcome to **SunnyLand**, a simple and fun platformer game developed using Godot 4.2.2. In this game, you play as a brave fox who must journey through three dense forests to reach the end of the level. Each forest presents its own challenges and obstacles, but with quick reflexes and a little bit of courage, you'll guide the fox safely through to victory!
+Welcome to **SunnyLand**, a simple and fun platformer game developed using Godot 4.2.2. In this game, you play as a brave fox who must journey through three dense forests to reach the end of the level. Each forest presents different obstacles, but with quick reflexes and a little bit of courage, you'll guide the fox safely through to victory!
 
 ## Story 🦊
 
