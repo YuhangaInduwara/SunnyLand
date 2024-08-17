@@ -38,7 +38,7 @@ Here are some screenshots of SunnyLand in action:
 
 Check out this video to see the gameplay of SunnyLand:
 
-[![SunnyLand Gameplay](gameplay/screenshots/Gameplay_01.png)](gameplay/screen_recording/gameplay.mp4)
+[![SunnyLand Gameplay](gameplay/screenshots/Gameplay_01.png)](https://youtu.be/WqkDNinvZiU)
 
 ---
 
