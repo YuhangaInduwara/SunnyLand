@@ -1,0 +1,191 @@
+[gd_scene load_steps=9 format=3 uid="uid://cq14nciqggwk7"]
+
+[ext_resource type="PackedScene" uid="uid://bpaxhwpqt71te" path="res://Player/player.tscn" id="1_sb3h3"]
+[ext_resource type="PackedScene" uid="uid://u1m2m2mfa1vi" path="res://BG.tscn" id="2_cu7ec"]
+[ext_resource type="Texture2D" uid="uid://4wn8cwmfpssl" path="res://Assets/stone-wall-flat-icon-pixel-260nw-759577363.jpg" id="3_8d6db"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vg438"]
+size = Vector2(14205, 123)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fq4al"]
+size = Vector2(113.5, 648)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2a8iu"]
+size = Vector2(34.875, 66.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qexq3"]
+size = Vector2(66, 66.25)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_l1pwc"]
+radius = 40.0
+height = 80.0
+
+[node name="World" type="Node2D"]
+position = Vector2(735, 0)
+
+[node name="Player" parent="." instance=ExtResource("1_sb3h3")]
+position = Vector2(-479, 364)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="Floor" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(5458.5, 658)
+shape = SubResource("RectangleShape2D_vg438")
+
+[node name="LeftWall" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-485, 328)
+shape = SubResource("RectangleShape2D_fq4al")
+
+[node name="RightWall" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(11700, 333)
+shape = SubResource("RectangleShape2D_fq4al")
+
+[node name="Log" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-220.438, 561.25)
+shape = SubResource("RectangleShape2D_2a8iu")
+
+[node name="Log2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1845, 563)
+shape = SubResource("RectangleShape2D_2a8iu")
+
+[node name="Log3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(5880, 560)
+shape = SubResource("RectangleShape2D_2a8iu")
+
+[node name="Log4" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(8934, 559)
+shape = SubResource("RectangleShape2D_2a8iu")
+
+[node name="Log5" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(10138, 559)
+shape = SubResource("RectangleShape2D_2a8iu")
+
+[node name="Log6" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(10380, 563)
+shape = SubResource("RectangleShape2D_2a8iu")
+
+[node name="stomp" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1242, 587)
+shape = SubResource("RectangleShape2D_qexq3")
+
+[node name="stomp2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(3305, 582)
+shape = SubResource("RectangleShape2D_qexq3")
+
+[node name="stomp3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(3804, 585)
+shape = SubResource("RectangleShape2D_qexq3")
+
+[node name="stomp4" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(5039, 585)
+shape = SubResource("RectangleShape2D_qexq3")
+
+[node name="stomp5" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(7129, 584)
+shape = SubResource("RectangleShape2D_qexq3")
+
+[node name="stomp6" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(7717, 587)
+shape = SubResource("RectangleShape2D_qexq3")
+
+[node name="stomp7" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(8206, 587)
+shape = SubResource("RectangleShape2D_qexq3")
+
+[node name="stomp8" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(10577, 593)
+shape = SubResource("RectangleShape2D_qexq3")
+
+[node name="stomp9" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(10929, 593)
+shape = SubResource("RectangleShape2D_qexq3")
+
+[node name="Rock" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(529, 588)
+shape = SubResource("CapsuleShape2D_l1pwc")
+
+[node name="Rock2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(2593, 582)
+shape = SubResource("CapsuleShape2D_l1pwc")
+
+[node name="Rock3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(4071, 586)
+shape = SubResource("CapsuleShape2D_l1pwc")
+
+[node name="Rock4" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(4442, 588)
+shape = SubResource("CapsuleShape2D_l1pwc")
+
+[node name="Rock5" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(6275, 585)
+shape = SubResource("CapsuleShape2D_l1pwc")
+
+[node name="Rock6" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(7980, 592)
+shape = SubResource("CapsuleShape2D_l1pwc")
+
+[node name="Rock7" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(8471, 588)
+shape = SubResource("CapsuleShape2D_l1pwc")
+
+[node name="Rock8" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(9427, 591)
+shape = SubResource("CapsuleShape2D_l1pwc")
+
+[node name="Rock9" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(9921, 587)
+shape = SubResource("CapsuleShape2D_l1pwc")
+
+[node name="Rock10" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(11191, 595)
+shape = SubResource("CapsuleShape2D_l1pwc")
+
+[node name="BG" parent="." instance=ExtResource("2_cu7ec")]
+
+[node name="Stone-wall-flat-icon-pixel-260Nw-759577363" type="Sprite2D" parent="."]
+position = Vector2(6565, 65)
+texture = ExtResource("3_8d6db")
+
+[node name="Stone-wall-flat-icon-pixel-260Nw-759577368" type="Sprite2D" parent="."]
+position = Vector2(6565, -55)
+texture = ExtResource("3_8d6db")
+
+[node name="Stone-wall-flat-icon-pixel-260Nw-759577364" type="Sprite2D" parent="."]
+position = Vector2(6565, 185)
+texture = ExtResource("3_8d6db")
+
+[node name="Stone-wall-flat-icon-pixel-260Nw-759577365" type="Sprite2D" parent="."]
+position = Vector2(6565, 305)
+texture = ExtResource("3_8d6db")
+
+[node name="Stone-wall-flat-icon-pixel-260Nw-759577366" type="Sprite2D" parent="."]
+position = Vector2(6565, 424)
+texture = ExtResource("3_8d6db")
+
+[node name="Stone-wall-flat-icon-pixel-260Nw-759577367" type="Sprite2D" parent="."]
+position = Vector2(6565, 544)
+texture = ExtResource("3_8d6db")
+
+[node name="Stone-wall-flat-icon-pixel-260Nw-759577369" type="Sprite2D" parent="."]
+position = Vector2(2881, 64)
+texture = ExtResource("3_8d6db")
+
+[node name="Stone-wall-flat-icon-pixel-260Nw-759577370" type="Sprite2D" parent="."]
+position = Vector2(2881, -56)
+texture = ExtResource("3_8d6db")
+
+[node name="Stone-wall-flat-icon-pixel-260Nw-759577371" type="Sprite2D" parent="."]
+position = Vector2(2881, 184)
+texture = ExtResource("3_8d6db")
+
+[node name="Stone-wall-flat-icon-pixel-260Nw-759577372" type="Sprite2D" parent="."]
+position = Vector2(2881, 304)
+texture = ExtResource("3_8d6db")
+
+[node name="Stone-wall-flat-icon-pixel-260Nw-759577373" type="Sprite2D" parent="."]
+position = Vector2(2881, 423)
+texture = ExtResource("3_8d6db")
+
+[node name="Stone-wall-flat-icon-pixel-260Nw-759577374" type="Sprite2D" parent="."]
+position = Vector2(2881, 543)
+texture = ExtResource("3_8d6db")

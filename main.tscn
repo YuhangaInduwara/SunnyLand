@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=3 uid="uid://bga3cg3r1xoc4"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_lyccb"]
+[ext_resource type="PackedScene" uid="uid://u1m2m2mfa1vi" path="res://BG.tscn" id="2_8bsmr"]
+
+[node name="Main" type="Node2D"]
+scale = Vector2(1.55, 1.55)
+script = ExtResource("1_lyccb")
+
+[node name="PlayButton" type="Button" parent="."]
+offset_left = 494.0
+offset_top = 219.0
+offset_right = 710.0
+offset_bottom = 297.0
+tooltip_text = "This is the play button"
+theme_override_font_sizes/font_size = 24
+text = "Play"
+
+[node name="QuitButton" type="Button" parent="."]
+offset_left = 496.0
+offset_top = 325.0
+offset_right = 712.0
+offset_bottom = 403.0
+tooltip_text = "This is the quit button"
+theme_override_font_sizes/font_size = 24
+text = "Quit"
+
+[node name="BG" parent="." instance=ExtResource("2_8bsmr")]
+scale = Vector2(1.55, 1.55)
+transform = Transform2D(1.55, 0, 0, 1.55, 0, 0)
+
+[connection signal="pressed" from="PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]
